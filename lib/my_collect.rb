@@ -1,15 +1,17 @@
+
 def my_collect(languages)
   i = 0
+  collection = []
   while i < languages.length
-    yield(languages[i])
+   collection << yield(languages[i])
     i += 1
   end
+  collection
 end
 
-my_collect(["ruby", "javascript", "python", "objective-c"]) do |language| language.upcase 
-end
+my_collect(["ruby", "javascript", "python", "objective-c"])
 
 
-# my_collect(["ruby", "javascript", "python", "objective-c"]) { |languages| "#{languages}" }
+
 
 
