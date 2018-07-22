@@ -9,7 +9,6 @@ def my_collect(languages)
   collection
 end
 
-# my_collect(["ruby", "javascript", "python", "objective-c"])
 
 
 
